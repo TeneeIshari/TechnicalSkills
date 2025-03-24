@@ -1,0 +1,167 @@
+<html>
+     <head>
+     	<link href="beauty.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap&italic" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap">
+
+     	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     	<title>Beauty Salon</title>
+     	
+    </head>
+     <body>
+        <header>
+     		<a href="#" class="logo">Divine Dazzle</a>
+
+     		<nav class="navbar">
+     			<a href="#home">home</a>
+            <a href="#about">about</a>
+     			<a href="#gallery">gallery</a>
+     			<a href="#contact">contact us</a>
+     			<a href="#location">location</a>
+            <a href="#contact" class="button">Make an Appointment</a>
+
+     		</nav>
+
+     	</header>
+
+     	<section id="home">
+     		<div class="content">
+             <div class="text-left">
+               <h3>Look fabulous</h3>
+               <a href="#contact" class="button">Make an Appointment</a>
+            </div>
+            <div class="text-right">
+               <h4>feel unstoppable.</h4>
+            </div>
+         </div>
+      </section>
+
+     	<section id="about">
+     		<div class="info">
+            <div class="intro">
+        			<h3>Who we are?</h3>
+        			<p>A beauty salon is an establishment dealing with cosmetic treatments for women. Other variations of this type of business include hair salons and makeup.A beauty salon is an establishment dealing with cosmetictreatments for women.</p>
+
+               <ul>
+                  <li>Hair Styling</li>
+                  <li>Hair Coloring</li>
+                  <li>Makeup</li>
+                  <li>Nail Art</li>
+                  <li>Facial</li>
+               </ul>
+            </div>
+
+            <div class="video">
+               <video src="img2/makeup.mp4" autoplay loop muted>
+               </video>
+            </div>
+
+     		   
+         </div>
+
+     	</section>
+
+     	<section id="gallery">
+        <h1>Gallery</h1>
+        <div class="images">
+          <div class="hair">
+            <h3>Hair</h3>
+            <img src="img2/img6.jpeg" alt="Hair Style 1">
+            <img src="img2/img7.jpeg" alt="Hair Style 2">
+            <img src="img2/img9.jpeg" alt="Hair Style 3">
+            <img src="img2/img8.jpeg" alt="Hair Style 4">
+            <img src="img2/img20.webp" alt="Hair Style 5">
+            <img src="img2/img21.jpeg" alt="Hair Style 6">
+            <img src="img2/img22.jpeg" alt="Hair Style 7">
+          </div>
+          <div class="make-up">
+            <h3>Make-Up</h3>
+            <img src="img2/img4.jpeg" alt="Make-up Style 1">
+            <img src="img2/img5.jpeg" alt="Make-up Style 2">
+            <img src="img2/img2.jpeg" alt="Make-up Style 3">
+            <img src="img2/img10.jpeg" alt="Make-up Style 4">
+            <img src="img2/img23.webp" alt="Make-up Style 5">
+          </div>
+          <div class="skin">
+            <h3>Skin</h3>
+            <img src="img2/img13.webp" alt="Skin Care 1">
+            <img src="img2/img14.webp" alt="Skin Care 2">
+            <img src="img2/img15.webp" alt="Skin Care 3">
+            <img src="img2/img17.webp" alt="Skin Care 4">
+            <img src="img2/img18.webp" alt="Skin Care 5">
+            <img src="img2/img19.webp" alt="Skin Care 6">
+          </div>
+         
+        </div>
+      </section>
+      <section id="contact">
+         <h1>Contact Us</h1>
+         <div class="contact">
+            <div class="contact-info">
+               <input type="text" name="username" placeholder="Name"/>
+
+               <input type="number" name="number" placeholder="Phone Number"/>
+
+               <input type="text" name="service" placeholder="Service Catogory"/>
+
+               <input type="text" name="message" placeholder="Message">
+
+               <label for="date">Choose an appointment date:</label>
+               <select id="date" name="date"></select>
+
+               <label for="time">Choose a time:</label>
+               <select id="time" name="time"></select>
+
+               <button onclick="submitAppointment()">Submit Appointment</button>
+
+            </div>
+            <div class="video_hair">
+               <video src="img2/hair.mp4" autoplay loop muted></video>
+            </div>
+         </div>
+
+
+      </section>
+      <script src="beauty.js"></script>
+      <section id="location">
+         <h1>Location</h1>
+         <div class="locate">
+            <div class="open-hours">
+               <h3>Open Hours</h3>
+               <ul>
+                  <li>Monday - 8.00AM - 5.00PM</li>
+                  <li>Tuesday - 8.00AM - 5.00PM</li>
+                  <li>Wednesday - 8.00AM - 5.00PM</li>
+                  <li>Thursday- 8.00AM - 5.00PM</li>
+                  <li>Friday - 8.00AM - 5.00PM</li>
+                  <li>Saturday - 9.00AM - 3.00PM</li>
+                  <li>Sunday- 9.00AM - 3.00PM</li>
+                  <li>Poya Days - Closed</li>
+                  <li>Public Holidays - Closed</li>
+               </ul>
+            </div>
+            <div class="location">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126756.58962615472!2d79.83662747849154!3d6.927079540826986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd260b4fa11%3A0xf580e12fb12d21f3!2sColombo%2005%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1694523030107!5m2!1sen!2sus"
+                  width="50%"
+                  height="60%"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+               ></iframe>
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+
+     </body>
+
+</html>
